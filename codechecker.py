@@ -178,9 +178,14 @@ def codechecker(filename, inputfile=None, expectedoutput=None, timeout=1, check=
 if __name__ == '__main__':
 
     codechecker(
-        filename='sampleC++.cpp',               # Source code file
-        inputfile='input.txt',                  # Input file
-        expectedoutput='correctoutput.txt',     # Expected output
-        timeout=1,                              # Time limit
-        check=True                              # Set to true to check actual output against expected output
+        # Source code file
+        filename='sample.cpp',
+        # Input file
+        inputfile='sample_input.txt',
+        # Expected output
+        expectedoutput='expected_output.txt',
+        # Time limit
+        timeout=1,
+        # Set to true to check actual output against expected output
+        check=True
     )
